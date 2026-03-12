@@ -5,7 +5,8 @@ int arr[20];        //membuat array dengan panjang data 20
 int n;              //membuat variable inputan n
 
 void input (){  //procedure input
-    while (true){
+    while (true)
+    {
         cout << "Masukan Jumlah Data Pada Array : ";
         cin >> n;
 
@@ -21,7 +22,8 @@ void input (){  //procedure input
     cout << "=========Masukan Element Array================";
     cout << "==============================================";
 
-    for (int i = 0; i < n; i++ ){
+    for (int i = 0; i < n; i++ )
+    {
         cout << "Data ke-" << (i+1) << ": ";
         cin >> arr[i];
     }
@@ -31,7 +33,8 @@ void insertionsort(){  //procedure insertion sort
     int temp;
     int j;
 
-    for (int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         temp = arr[i];
         j = i+1;
         while (j >= 0 && arr[j] > temp)
@@ -48,5 +51,15 @@ void insertionsort(){  //procedure insertion sort
     }
 }
 void display(){
-    
+    cout << endl;
+    cout << "\n===================";
+    cout << "\nElement Array" << endl;
+    cout << "\n===================";
+
+    for(int j = 0; j < n; j++){
+        cout << arr[j] << endl;
+    }
+    cout << endl;
 }
+
+int main()
