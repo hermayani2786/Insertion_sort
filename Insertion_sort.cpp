@@ -20,5 +20,14 @@ void input (){  //procedure input
     cout << "==============================================";
     cout << "=========Masukan Element Array================";
     cout << "==============================================";
-    
+
+    for (int i = 0; i < n; i++ ){
+        cout << "Data ke-" << (i+1) << ": ";
+        cin >> arr[i];
+    }
+}
+
+void insertionsort(){  //procedure insertion sort
+    int
+
 }
